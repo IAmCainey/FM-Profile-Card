@@ -146,4 +146,34 @@ main {
   letter-spacing: 1.5px;
   color: #6B7082;
 }
+
+#footer {
+  width: 100%;
+  position: absolute;
+  z-index: 50;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  bottom: 0;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  font-size: 14px;
+  color: #3a3a3a;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #dbdbdb;
+}
 /*# sourceMappingURL=style.css.map */
