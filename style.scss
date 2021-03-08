@@ -1,0 +1,140 @@
+// Reuseable styles
+
+// Fonts
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
+.font__bold {
+    font-weight: 700;
+}
+
+.font__normal {
+    font-weight: 400;
+}
+
+// Colors
+$cyan : hsl(185, 75%, 39%);
+$dark-blue: hsl(229, 23%, 23%);
+$gray: hsl(227, 10%, 46%);
+$dark-gray: hsl(0, 0%, 59%);
+
+html {
+    margin: 0;
+}
+
+body {
+    background: $cyan;
+    overflow: hidden;
+}
+
+#top-image {
+    height: 621px;
+    width: 622px;
+    position: absolute;
+    top: -394px;
+    left: -98.65px;
+    rotate: (135deg);
+}
+
+#bottom-image {
+    height: 621px;
+    width: 622px;
+    position: absolute;
+    top: 500px;
+    left: 275.65px;
+    rotate: (45deg);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    width: 326px;
+    min-height: 374px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 100;
+    box-shadow: 0 50px 100px -20px #08465e50;
+
+    #top {
+        height: 140px;
+        width: auto;
+        background-image: url(../images/bg-pattern-card.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: flex;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #img {
+        border-radius: 100px;
+        border: 5px solid #fff;
+        height: 96px;
+        width: 96px;
+        bottom: -70px;
+        position: relative;
+        margin: auto;
+    }
+
+    #mid {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 60px;
+        border-bottom: 1px solid hsl(231, 17%, 92%);
+        padding-bottom: 28px;
+
+        h1 {
+            color: $dark-blue;
+            font-size: 18px;
+            text-transform: capitalize;
+
+            small {
+                font-size: 18px;
+                color: #6B7082;
+            }
+        }
+
+        .location {
+            font-size: 14px;
+            font-weight: 300;
+            color: #6b7082;
+            text-transform: capitalize;
+        }
+    }
+
+    #bottom {
+        display: flex;
+        flex-direction: row;
+        align-content: space-around;
+        width: 233px;
+        text-align: center;
+        padding: 24px 0;
+        margin: auto;
+
+
+        div {
+            width: 33.33%;
+            text-transform: capitalize;
+
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2E3349;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 10px;
+            letter-spacing: 1.5px;
+            color: #6B7082;
+        }
+    }
+}
