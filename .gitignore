@@ -17,6 +17,5 @@
 .prettierignore
 
 
-src/node_modules/
-src/.cache/
-src/public
+style-guide.md
+
