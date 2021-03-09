@@ -23,15 +23,29 @@ body {
   top: -394px;
   left: -98.65px;
   rotate: 135deg;
+  opacity: .25;
 }
 
-#bottom-image {
-  height: 621px;
-  width: 622px;
-  position: absolute;
-  top: 500px;
-  left: 275.65px;
-  rotate: 45deg;
+@media (min-width: 768px) {
+  #bottom-image {
+    height: 621px;
+    width: 622px;
+    position: absolute;
+    bottom: -400px;
+    right: 0;
+    rotate: -45deg;
+  }
+}
+
+@media (max-width: 768px) {
+  #bottom-image {
+    height: 621px;
+    width: 622px;
+    position: absolute;
+    bottom: -300px;
+    right: -200px;
+    rotate: -45deg;
+  }
 }
 
 main {

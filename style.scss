@@ -1,8 +1,13 @@
-// Reuseable styles
-
 // Fonts
 @import url(https://fonts.google.com/specimen/Kumbh+Sans);
 
+
+// Media
+$desktop: 768px;
+$mobile: 768px;
+
+
+// font weights
 .font__bold {
     font-weight: 700;
 }
@@ -11,12 +16,15 @@
     font-weight: 400;
 }
 
+
 // Colors
 $cyan : hsl(185, 75%, 39%);
 $dark-blue: hsl(229, 23%, 23%);
 $gray: hsl(227, 10%, 46%);
 $dark-gray: hsl(0, 0%, 59%);
 
+
+// foundations for grateness!
 html {
     margin: 0;
 }
@@ -26,6 +34,8 @@ body {
     overflow: hidden;
 }
 
+
+// Background Images = Bubbles
 #top-image {
     height: 621px;
     width: 622px;
@@ -33,17 +43,35 @@ body {
     top: -394px;
     left: -98.65px;
     rotate: (135deg);
+    opacity: .25;
 }
 
-#bottom-image {
-    height: 621px;
-    width: 622px;
-    position: absolute;
-    top: 500px;
-    left: 275.65px;
-    rotate: (45deg);
+//Desktop
+@media (min-width: $desktop) {
+    #bottom-image {
+        height: 621px;
+        width: 622px;
+        position: absolute;
+        bottom: -400px;
+        right: 0;
+        rotate: (-45deg);
+    }
 }
 
+//Mobile
+@media (max-width: $mobile) {
+    #bottom-image {
+        height: 621px;
+        width: 622px;
+        position: absolute;
+        bottom: -300px;
+        right: -200px;
+        rotate: (-45deg);
+    }
+}
+
+
+// Main Div / Holder
 main {
     height: 100vh;
     display: flex;
@@ -51,6 +79,8 @@ main {
     justify-content: center;
 }
 
+
+// The Profile Card
 #card {
     width: 326px;
     min-height: 374px;
@@ -60,6 +90,7 @@ main {
     z-index: 100;
     box-shadow: 0 50px 100px -20px #08465e50;
 
+    // Top Div
     #top {
         height: 140px;
         width: auto;
@@ -81,6 +112,7 @@ main {
         margin: auto;
     }
 
+    // Middle Div with content
     #mid {
         display: flex;
         flex-direction: column;
@@ -108,6 +140,8 @@ main {
         }
     }
 
+
+    // Bottom div with social stats
     #bottom {
         display: flex;
         flex-direction: row;
@@ -139,6 +173,10 @@ main {
     }
 }
 
+// End of Card
+
+
+// Frontend Mentor's shoutout!!!!! Thanks!
 #footer {
     width: 100%;
     position: absolute;
