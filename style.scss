@@ -98,8 +98,9 @@ main {
         background-repeat: no-repeat;
         background-position: center center;
         display: flex;
-        margin: 0 auto;
-        padding: 0;
+        padding-top: 92px;
+        ;
+        padding: 0 115px;
     }
 
     #img {
@@ -107,9 +108,8 @@ main {
         border: 5px solid #fff;
         height: 96px;
         width: 96px;
-        bottom: -70px;
         position: relative;
-        margin: auto;
+        margin-top: 92px;
     }
 
     // Middle Div with content
@@ -119,7 +119,6 @@ main {
         text-align: center;
         padding-top: 60px;
         border-bottom: 1px solid hsl(231, 17%, 92%);
-        padding-bottom: 28px;
 
         h1 {
             color: $dark-blue;
@@ -137,6 +136,8 @@ main {
             font-weight: 300;
             color: #6b7082;
             text-transform: capitalize;
+            line-height: 8px;
+            margin-bottom: 28px;
         }
     }
 
@@ -148,8 +149,8 @@ main {
         align-content: space-around;
         width: 233px;
         text-align: center;
-        padding: 24px 0;
-        margin: auto;
+
+        margin: 24px auto;
 
 
         div {
@@ -158,7 +159,7 @@ main {
 
         }
 
-        h2 {
+        .fig {
             font-size: 18px;
             font-weight: 700;
             color: #2E3349;
@@ -170,6 +171,7 @@ main {
             font-size: 10px;
             letter-spacing: 1.5px;
             color: #6B7082;
+            line-height: 9px;
         }
     }
 }
